@@ -6,7 +6,7 @@ body {
     background-color: #FFFFFF;
     min-height: 31.25em;
     margin-top: 6.875rem;
-    min-width 75rem;
+    min-width: 75rem;
     padding-left: 6.25rem;
     position: relative;
     z-index: 1;
@@ -22,11 +22,9 @@ body {
 
 .ryu-ready,
 .ryu-still,
-ryu-throwing {
+.ryu-throwing {
     width: 41.1875rem;
     height: 30.875rem;
-    /*debuging style*/
-    outline: 1px solid red;
 }
 
 .ryu-ready,

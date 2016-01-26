@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+}
+
+.main {
+    background-color: #FFFFFF;
+    min-height: 31.25em;
+    margin-top: 6.875rem;
+    min-width 75rem;
+    padding-left: 6.25rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*RYU IMAGES STYLES*/
+
+.ryu {
+    width: 41.1875rem;
+    height: 30.875rem;
+}
+
+.ryu-ready,
+.ryu-still,
+ryu-throwing {
+    width: 41.1875rem;
+    height: 30.875rem;
+    /*debuging style*/
+    outline: 1px solid red;
+}
+
+.ryu-ready,
+.ryu-throwing {
+    display: none;
+}
+
+.ryu-ready {
+    background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still {
+    background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing {
+    background-image: url('../images/ryu-throwing-hadouken.png');
+    /*I placed this height style because the image will go to the top of the page,
+   and i couldnt see it*/
+    height: inherit;
+}
+
+.hadouken {
+    background-image: url('../images/hadouken.gif');
+    width: 9.75rem;
+    height: 5.625rem;
+    display: none;
+    float: left;
+    position: absolute;
+    z-index: 10;
+    left: 34rem;
+    top: 10.5rem;
+}
+
+.hadouken,
+.ryu-still,
+.ryu-ready,
+.ryu-throwing {
+    background-repeat: no-repeat;
+}

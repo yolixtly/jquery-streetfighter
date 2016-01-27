@@ -1,5 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
     background-color: black;
+    font-family:'Kaushan Script', cursive;
 }
 
 .main {
@@ -19,16 +26,15 @@ body {
     width: 41.1875rem;
     height: 30.875rem;
 }
-
 .ryu-ready,
 .ryu-still,
-.ryu-throwing {
+.ryu-throwing, .ryu-cool {
     width: 41.1875rem;
     height: 30.875rem;
 }
 
 .ryu-ready,
-.ryu-throwing {
+.ryu-throwing, .ryu-cool {
     display: none;
 }
 
@@ -42,9 +48,9 @@ body {
 
 .ryu-throwing {
     background-image: url('../images/ryu-throwing-hadouken.png');
-    /*I placed this height style because the image will go to the top of the page,
-   and i couldnt see it*/
- 
+ }
+.ryu-cool {
+    background-image: url('../images/ryu-cool.gif');
 }
 
 .hadouken {
@@ -62,6 +68,28 @@ body {
 .hadouken,
 .ryu-still,
 .ryu-ready,
-.ryu-throwing {
+.ryu-throwing, .ryu-cool {
     background-repeat: no-repeat;
 }
+
+/*instructions styles*/
+ 
+.instructions {
+    width: 38rem;
+    height:31.25rem;
+    /*I had to place a top otherwise it will get out of the .main*/
+     top: 0;
+     left: 40rem;
+   position: absolute;
+   
+}
+   .instructions p{
+    width: 50%;
+    text-align: center;
+    font-size: 2.3rem;
+    padding-top: 1rem;
+    }
+    
+    .instructions p + p {
+        margin-left:18rem;
+    }

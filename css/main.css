@@ -44,7 +44,7 @@ body {
     background-image: url('../images/ryu-throwing-hadouken.png');
     /*I placed this height style because the image will go to the top of the page,
    and i couldnt see it*/
-    height: inherit;
+ 
 }
 
 .hadouken {
